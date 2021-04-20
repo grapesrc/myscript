@@ -14,9 +14,11 @@ def lexer(code):
     command_fin = 0     #コマンドの終わり1おわりじゃない0
     for n in range(len(code)):
         read_now = code[n]
+
         for i in range(len(read_stop)):
-            if read_now == read_stop[i]:
+            if read_now == read_stop[i]: #いま読んでいる文字がリストを区切る記号だったら
                 command_fin = 1     #コマンド終わり
+                            
         if command_fin == 1:#プログラム終わりまたは記号なら
             if code_read != "":  #読んでいるcommandが空白でなければ
                 
@@ -26,7 +28,7 @@ def lexer(code):
                     read_list.append(read_now)
                     code_read = ""  #初期化
                 
-                elif code_read.count('"') <= 2 or code_read.count("'") <= 2:    #クオーテーションが2つ(strの終わり)なら
+                elif code_read.count('"') >= 2 or code_read.count("'") >= 2:    #クオーテーションが2つ(strの終わり)なら
                     read_list.append(code_read) #リストに追加
                     read_list.append(read_now)
                     code_read = ""  #初期化
@@ -230,9 +232,13 @@ def loop(source,loop_num):  #loop文
     
 ##############run
 print(lexer("""
-                print>"hello";"""))
+            background>"#ff0000";
+            print>"hello,world!";"""))
+
+##プログラム
 code(lexer("""
-            print>"hello_world!";"""))  #ここにコードを書く yor code write here
+            print>"hello,world!";
+            """))  #ここにコードを書く yor code write here
 window.root.mainloop()
 
     
