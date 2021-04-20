@@ -35,3 +35,10 @@ background>"#f00";
 ```
 text_color>"#f00";
 ```
+
+##Run
+
+Run this code at python
+```
+code(lexer(" here code "))
+```
