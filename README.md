@@ -11,10 +11,10 @@ print>"Hello,world!";
 ```
 ### if
 ```
-if 1=1{print>"Hello,world!";}
+if,1=1{print>"Hello,world!";}
 ```
 ```
-if 1<2{print>"Hello,wold!";}
+if,1<2{print>"Hello,wold!";}
 ```
 ### loop
 ```
