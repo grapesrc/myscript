@@ -1,9 +1,8 @@
 # my porgramming language.
-## What this is?
-This is programming language
+## What's this?
+This project is my programming language.made in python.however,it have some bugs.so if you send Pull requests or a issue to this repository,I'm happy.Send a Pull requests or issue,please. :)
 
-This was made using Python
-## How do coding
+## How to coding?
 ![hello,world](hello.png)
 ### Hello,world!
 ```
@@ -36,9 +35,9 @@ background>"#f00";
 text_color>"#f00";
 ```
 
-## Run
+## How to run?
 
-Run this code at python
+Run this code at python.
 ```
 code(lexer(" here code "))
 ```
